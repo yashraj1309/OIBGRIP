@@ -1,0 +1,64 @@
+<!-- Designing a Temperature Converter -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Temperature Converter">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Temperature Converter</h1>
+        </header>
+        <form id="form">
+            <div class="main-input">
+                <label for="input"><span>Value to Covert : </span></label>
+                <br>
+                <input type="number" name="input" placeholder="00.00" id="input" class="inputBox">
+            </div>
+            <br>
+            <div class="flex-container">
+            <div>
+            <label for="inputMenu"><span>From :</span></label>
+            <br>
+                <select name="inputMenu" id="inputMenu">
+                    <option value="c" selected>Celsius(&#176;C)</option>
+                    <option value="f">Fahrenheit(&#176;F)</option>
+                    <option value="k">Kelvin(K)</option>
+                </select>
+                <br>
+                <br>
+            </div>
+            <div style="margin-right: 130px;">
+                <label for="outputMenu"><span>To :</span></label>
+                <br>
+                <select name="outputMenu" id="outputMenu">
+                    <option value="c">Celsius(&#176;C)</option>
+                    <option value="f">Fahrenheit(&#176;F)</option>
+                    <option value="k">Kelvin(K)</option>
+                </select>
+            </div>
+            </div>
+            
+            <span>Output</span>
+            <div id="output" class="output">00.00</div>
+            <br>
+            <div class="flex-container">
+                <div>
+                    <input type="button" onclick="(convert())" value="convert" class="btn">
+                </div>
+                <div  style="margin-right: 174px;">
+                    <input type="button" onclick="resetForm()" value="reset" class="btn"> 
+                </div>
+            </div>
+        </form>
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
