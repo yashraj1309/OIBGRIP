@@ -260,8 +260,20 @@ nav div:hover::after {
     height: 350px;
     width: 5px;
     background-color: #8491A0;
-    box-shadow: 5px 0px 5px 0px #25F1E7; 
+    /* box-shadow: 5px 0px 5px 0px #25F1E7;  */
 }
+.photobanner::before {
+    content: '';
+    position: absolute;
+    top: 35px;
+    right: -100px;
+    z-index: 150;
+    height: 350px;
+    width: 5px;
+    background-color: #8491A0;
+    /* box-shadow: 5px 0px 5px 0px #25F1E7;  */
+}
+
 
 .photobanner svg {
     margin: 2em;
@@ -311,7 +323,7 @@ nav div:hover::after {
 
 .certificate div img:hover {
     transform: scale(1.1);
-    box-shadow: 0px 5px 10px #25F1E7;
+    box-shadow: 0px 5px 10px #689af8;
 }
 
 /* Contact Form */
@@ -429,6 +441,3 @@ footer .logofooter div a svg {
     margin-right: -5px;
     fill: white;
 }
-
-
-
