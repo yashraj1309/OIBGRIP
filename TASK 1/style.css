@@ -108,7 +108,7 @@ nav {
     align-items: center;
     width: 27vw;
     height: 85vh;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 5px;
     box-shadow: #2A2A33;
     padding: 10px 20px 20px 20px;
